@@ -15,33 +15,48 @@ console.log('Test - should say "Hello World!"', hello());
 // 2. Function to return an personalized hello, using the `name` argument.
 //    for example 'Hello, Jo!', or 'Hello, Stacy!'
 function helloName(name) {
-  return;
+  return `Hello, ${name}!`;
 }
 // Remember to call the function to test
-
+console.log('Test - should say "Hello, Jo!"', helloName('Jo'));
 
 // 3. Function to add two numbers together & return the result
-function addNumbers(firstNumber) {
+function addNumbers(firstNumber,secondNumber) {
   // return firstNumber + secondNumber;
 }
-
+function addNumbers(firstNumber,secondNumber) {
+  return firstNumber + secondNumber;
+}
+console.log('adding addNumbers with 7 & 7:', addNumbers(7, 7));
 
 // 4. Function to multiply three numbers & return the result
-function multiplyThree() {
-
+function multiplyThree(num1,num2,num3) { 
+  return num1 * num2 * num3;
 }
+console.log('multiplying the three numbers 2,3,7:  ', multiplyThree(2,3,7 ));
+
+///PSUEDO CODE  -- could also go about it in this manner
+//function multiplyThree(num1,num2,num3) { 
+ // console.log('In multiplyThree;', num1*num2*num3);
+  //let answer=num1 * num2 * num3;
+  //return answer
+//}
+//This is similar to the prime video
 
 
 // 5. Function that will return true if a number is positive, 
 //    or greater than zero, and false otherwise
 function isPositive(number) {
   if (number > 0) {
-    return;
+    return true;
   }
-  return;
+  return false;
 }
 // Call the function to test each outcome (true & false) 
 // Write a separate console.log statement for each outcome
+console.log('running to see if it is a postive number starting with 2:  ', isPositive(2));
+console.log('running again with the number -7:  ',isPositive(-7));
+console.log('running again with the number 0:  ', isPositive(0));
 
 
 // 6. Function to return the _last_ item in an array. If the 
